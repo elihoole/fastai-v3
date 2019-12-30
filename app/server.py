@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1-OyQJjFYNkXr9yIjiGYLiuBfxMr-ebLc'
+export_file_url = 'https://drive.google.com/file/d/1-SjgZDA-5c4WgRGQggQgbqkZdyXEhod8/view?usp=sharing'
 export_file_name = 'export.pkl'
 
-classes = ['early-blight', 'late -blight', 'healthy']
+classes = ['bacterial_spot', 'early_blight', 'late_blight', 'leaf_mold', 'Septoria_leaf_spot', 'Two-spotted_spider_mites', 'target_spot', 'yello_leaf_curl_virus', 'mosaic_virus', 'healthy']
 path = Path(__file__).parent
 
 app = Starlette()
@@ -67,3 +67,4 @@ async def analyze(request):
 if __name__ == '__main__':
     if 'serve' in sys.argv:
         uvicorn.run(app=app, host='0.0.0.0', port=5000, log_level="info")
+
