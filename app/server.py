@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/file/d/1-SjgZDA-5c4WgRGQggQgbqkZdyXEhod8/view?usp=sharing'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-SjgZDA-5c4WgRGQggQgbqkZdyXEhod8'
 export_file_name = 'export.pkl'
 
 classes = ['bacterial_spot', 'early_blight', 'late_blight', 'leaf_mold', 'Septoria_leaf_spot', 'Two-spotted_spider_mites', 'target_spot', 'yello_leaf_curl_virus', 'mosaic_virus', 'healthy']
